@@ -59,17 +59,21 @@ Model performance was evaluated using:
 ----
 ## Why scale_pos_weight is used?
 
+
 It is because dataset is imbalanced, which means more customer stayed and few customers churned
 Here model sees way more "not churn" example
 ---
-##Problem without scale_pos_weight
+## Problem without scale_pos_weight
+
 If we train model without scale_pos_weight the model thinks most customer didn't churn so it will predict NOT churn for everyone
 Then we get high accuracy but bad churn detection
 ---
-##Why is it dangerous
+## Why is it dangerous
+
 In real business missing a churn customer= losing revenue, so detecting chur customer is very important
 ---
-##What scale_pos_weight does?
+## What scale_pos_weight does?
+
 It tell the model to pay more attention to churn customers
 
 
