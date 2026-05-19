@@ -53,7 +53,9 @@ Model performance was evaluated using:
 
 \- F1-score
 
-\- Confusion Matrix
+\- Confusion_matrix
+
+
 ----
 ## Why scale_pos_weight is used?
 
